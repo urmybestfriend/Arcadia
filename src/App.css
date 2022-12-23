@@ -1,0 +1,64 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.App {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background-blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+    background: rgba(0, 3, 27, 0.8);
+    backdrop-filter: blur(2.5px);
+}
+.arcadia {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arcadia > h1{
+    left: -28px;
+    top: -120px;
+
+    height: 100%;
+    color: #fff0;
+    font-family: Akkordeon-Regular;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1000px;
+    line-height: 1300px;
+    text-transform: uppercase;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(30, 239, 239, 0.1);
+    overflow: hidden;
+}
+
+.frame1-img {
+    position: absolute;
+    width: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    top: 100px;
+    right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow-y: scroll;
+    }
+    .App {
+        width: 100%;    
+        height: fit-content;
+    }
+}

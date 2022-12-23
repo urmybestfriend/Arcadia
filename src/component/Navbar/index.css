@@ -1,0 +1,27 @@
+.nav-bar {
+    width: 80%;
+    height: 84px;
+
+    margin: auto;
+    margin-top: 20px;
+
+    background: rgba(0, 3, 27, 0.1);
+    border: 1px solid rgba(244, 249, 223, 0.1);
+    backdrop-filter: blur(7px);
+
+    border-radius: 10px;
+}
+
+.navbar-items a {
+    font-family: ChakraPetch-Regular;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: rgba(244, 249, 223, 0.5);
+}
+.navbar-items a:hover {
+    color: #F4F9DF;
+}
