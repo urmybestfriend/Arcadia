@@ -13,9 +13,8 @@ export default function Content() {
                 <div className="character-field" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/img/frame1.png'})`}}>
                     <img className="character" src={ process.env.PUBLIC_URL + "/assets/img/character.png"} />
                 </div>
-            <div className="footer-linear"></div>
-            </div>
-            
+                <div className="footer-linear"></div>
+            </div>            
         </div>
     );
 }

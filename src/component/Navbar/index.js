@@ -17,11 +17,11 @@ function classNames(...classes) {
 export default function Navbar() {
     return (
         <div className="nav-bar">
-            <Disclosure as="nav" className="bg-none mt-2">
+            <Disclosure as="nav" className="bg-none">
                 {({ open }) => (
                     <>
                         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                            <div className="relative flex h-16 items-center justify-between">
+                            <div className="relative flex h-13 mt-1 mb-1 items-center justify-between">
                                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                     {/* Mobile menu button*/}
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -36,12 +36,12 @@ export default function Navbar() {
                                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                     <div className="flex flex-shrink-0 items-center">
                                         <img
-                                            className="block h-12 w-12 l-20 lg:hidden"
+                                            className="block h-9 w-9 l-20 lg:hidden"
                                             src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
                                             alt="Your Company"
                                         />
                                         <img
-                                            className="hidden h-12 w-12 lg:block"
+                                            className="hidden h-9 w-9 lg:block"
                                             src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
                                             alt="Your Company"
                                         />
@@ -54,7 +54,7 @@ export default function Navbar() {
                                                     href={item.href}
                                                     className={classNames(
                                                         item.current ? 'bg-none text-white' : 'text-white hover:bg-none hover:text-white',
-                                                        'px-3 py-2 rounded-md text-sm font-medium'
+                                                        'px-3 py-2 rounded-md text-sm font-12 font-medium'
                                                     )}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
@@ -71,7 +71,7 @@ export default function Navbar() {
                                     >
                                         <span className="sr-only">View notifications</span>
                                         {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
-                                        <img src={process.env.PUBLIC_URL + "/assets/icons/twitter.svg"} className="h-6 w-6" aria-hidden="true" />
+                                        <img src={process.env.PUBLIC_URL + "/assets/icons/twitter.svg"} className="h-5 w-5" aria-hidden="true" />
                                     </button>
                                     <button
                                         type="button"
@@ -79,7 +79,7 @@ export default function Navbar() {
                                     >
                                         <span className="sr-only">View notifications</span>
                                         {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
-                                        <img src={process.env.PUBLIC_URL + "/assets/icons/joystick.svg"} className="h-6 w-6" aria-hidden="true" />
+                                        <img src={process.env.PUBLIC_URL + "/assets/icons/joystick.svg"} className="h-5 w-5" aria-hidden="true" />
                                     </button>
                                     <button
                                         type="button"
@@ -87,7 +87,7 @@ export default function Navbar() {
                                     >
                                         <span className="sr-only">View notifications</span>
                                         {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
-                                        <img src={process.env.PUBLIC_URL + "/assets/icons/plane.svg"} className="h-6 w-6" aria-hidden="true" />
+                                        <img src={process.env.PUBLIC_URL + "/assets/icons/plane.svg"} className="h-5 w-5" aria-hidden="true" />
                                     </button>
                                 </div>
                             </div>

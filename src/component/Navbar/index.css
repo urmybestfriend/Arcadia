@@ -1,9 +1,8 @@
 .nav-bar {
     width: 80%;
-    height: 84px;
+    height: fit-content;
 
     margin: auto;
-    margin-top: 20px;
 
     background: rgba(0, 3, 27, 0.1);
     border: 1px solid rgba(244, 249, 223, 0.1);
@@ -15,8 +14,7 @@
 .navbar-items a {
     font-family: ChakraPetch-Regular;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.5em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 

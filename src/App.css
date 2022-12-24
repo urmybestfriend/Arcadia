@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .App {
     background-position: center;
@@ -24,7 +24,7 @@ body {
 }
 .arcadia {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 }
@@ -33,13 +33,12 @@ body {
     left: -28px;
     top: -120px;
 
-    height: 100%;
+    height: 100vh;
     color: #fff0;
     font-family: Akkordeon-Regular;
     font-style: normal;
     font-weight: 550;
-    font-size: 1000px;
-    line-height: 1300px;
+    font-size: 60em;
     text-transform: uppercase;
 	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(30, 239, 239, 0.1);
@@ -53,6 +52,11 @@ body {
     top: 100px;
     right: 20px;
 }
+@media only screen and (max-width: 1366px) {
+    .arcadia > h1{
+        font-size: 40em;
+    }
+}
 @media only screen and (max-width: 1024px) {
     body {
         overflow-y: scroll;
@@ -60,5 +64,8 @@ body {
     .App {
         width: 100%;    
         height: fit-content;
+    }
+    .arcadia > h1 {
+        font-size: 30em;
     }
 }
