@@ -14,12 +14,29 @@
 .navbar-items a {
     font-family: ChakraPetch-Regular;
     font-weight: 700;
-    font-size: 0.5em;
+    font-size: 0.7em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
     color: rgba(244, 249, 223, 0.5);
+    position: relative;
+}
+.white-text{
+    color: #F4F9DF!important;
 }
 .navbar-items a:hover {
     color: #F4F9DF;
+}
+
+.navbar-items .badge-upcoming {
+    position: absolute;
+    background-color: #1EEFEF;
+    color: #00031B;
+    font-size: 0.3em;
+    padding: 1px 5px;
+    box-shadow: 0px 17px 34px rgb(30 239 239 / 25%);
+    border-radius: 4px;
+    line-height: 8px;
+    right: 0.75rem;
+    top: 0px;
 }

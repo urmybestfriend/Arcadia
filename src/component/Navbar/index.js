@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import './index.css'
 
 const navigation = [
-    { name: 'HOME', href: '#', current: true },
-    { name: 'UPCOMING', href: '#', current: false },
-    { name: 'PAST', href: '#', current: false },
-    { name: 'ABOUT', href: '#', current: false },
+    { name: 'HOME', href: '#', current: true, soon: false },
+    { name: 'UPCOMING', href: '#', current: false, soon: true },
+    { name: 'PAST', href: '#', current: false, soon: true },
+    { name: 'ABOUT', href: '#', current: false, soon: false },
 ]
 
 function classNames(...classes) {
@@ -21,7 +21,7 @@ export default function Navbar() {
                 {({ open }) => (
                     <>
                         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                            <div className="relative flex h-13 mt-1 mb-1 items-center justify-between">
+                            <div className="relative flex h-15.5 mt-2 mb-2 items-center justify-between">
                                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                     {/* Mobile menu button*/}
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -49,17 +49,31 @@ export default function Navbar() {
                                     <div className="hidden sm:m-auto sm:block">
                                         <div className="flex space-x-4 navbar-items">
                                             {navigation.map((item) => (
-                                                <a
-                                                    key={item.name}
-                                                    href={item.href}
-                                                    className={classNames(
-                                                        item.current ? 'bg-none text-white' : 'text-white hover:bg-none hover:text-white',
-                                                        'px-3 py-2 rounded-md text-sm font-12 font-medium'
-                                                    )}
-                                                    aria-current={item.current ? 'page' : undefined}
-                                                >
-                                                    {item.name}
-                                                </a>
+                                                item.soon ? (
+                                                    <a
+                                                        key={item.name}
+                                                        href={item.href}
+                                                        className={classNames(
+                                                            item.current ? 'bg-none text-white' : 'text-white hover:bg-none hover:text-white',
+                                                            'px-3 py-2 rounded-md text-sm font-medium'
+                                                        )}
+                                                        aria-current={item.current ? 'page' : undefined}
+                                                    >
+                                                        <span className="badge badge-upcoming">SOON</span>
+                                                        {item.name}
+                                                    </a>
+                                                ):(<a
+                                                        key={item.name}
+                                                        href={item.href}
+                                                        className={classNames(
+                                                            item.current ? 'white-text bg-none text-white' : 'text-white hover:bg-none hover:text-white',
+                                                            'px-3 py-2 rounded-md text-sm font-medium'
+                                                        )}
+                                                        aria-current={item.current ? 'page' : undefined}
+                                                    >
+                                                        {item.name}
+                                                    </a>
+                                                    )
                                             ))}
                                         </div>
                                     </div>
