@@ -18,7 +18,7 @@
     font-family: Akkordeon-Regular;
     font-style: normal;
     color: white;
-    font-size: 16em;
+    font-size: 14em;
     line-height: 230px;
 }
 .accelerator-text {
@@ -99,7 +99,7 @@
 }
 @media only screen and (max-width: 1366px) {
     .arcadia-text {
-        font-size: 11em;
+        font-size: 10em;
         line-height: 150px;
     }
     .accelerator-text {
@@ -121,7 +121,7 @@
         height: 100%;
     }
     .arcadia-text {
-        font-size: 12em;
+        font-size: 9em;
         line-height: 200px;
     }
     .accelerator-text {
@@ -153,7 +153,7 @@
         position: fixed;
     }
     .arcadia-text {
-        font-size: 9em;
+        font-size: 8em;
     }
     .character {
         height: 60vh;
