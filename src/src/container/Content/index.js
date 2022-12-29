@@ -15,7 +15,6 @@ export default function Content() {
                 <div>
                     <div className="character-field" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/img/frame1.png'})`}}>
                         <div className="character" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/img/character.png'})`}}></div>
-                        {/* <img className="character" src={ process.env.PUBLIC_URL + "/assets/img/character.png"} /> */}
                     </div>
                 </div>
                 <div className="footer-linear"></div>
