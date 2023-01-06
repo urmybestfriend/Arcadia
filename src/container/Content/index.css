@@ -47,7 +47,7 @@
 
     color: white;
 }
-#apply-button {
+.apply-button {
     box-sizing: border-box;
     margin-top: 20px;
     width: 130px;
@@ -74,13 +74,14 @@
     display: flex;
     align-items: center;
     height: 100%;
-    width: 90%;
+    width: 85%;
     margin: auto;
+    overflow: hidden;
 }
 .character {
     margin: auto;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     background-size: contain;
     background-position-y: 1vh;
     background-position-x: center;
@@ -108,7 +109,7 @@
         font-size: 0.8em;
         max-width: 400px;
     }
-    #apply-button {
+    .apply-button {
         width: 110px;
     }
     .character {
@@ -130,7 +131,7 @@
         font-size: 0.8em;
         max-width: 400px;
     }
-    #apply-button {
+    .apply-button {
         width: 160px;
     }
     .footer-linear {

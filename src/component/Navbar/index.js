@@ -1,13 +1,12 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure  } from '@headlessui/react'
+import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import './index.css'
 
 const navigation = [
     { name: 'HOME', href: '#', current: true, soon: false },
     { name: 'UPCOMING', href: '#', current: false, soon: true },
     { name: 'PAST', href: '#', current: false, soon: true },
-    { name: 'ABOUT', href: '#', current: false, soon: false },
+    { name: 'ABOUT', href: 'https://medium.com/@Arcadialaunchpad', current: false, soon: false },
 ]
 
 function classNames(...classes) {
