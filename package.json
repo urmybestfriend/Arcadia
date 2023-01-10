@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false && craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -30,6 +30,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "engines": {
+    "node": "14.x"
   },
   "browserslist": {
     "production": [
